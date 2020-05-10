@@ -18,7 +18,6 @@ namespace Bookstore_Project
         public Nullable<int> IdClient { get; set; }
         public Nullable<int> IdWorker { get; set; }
         public Nullable<int> IdProduct { get; set; }
-        public Nullable<int> Prise { get; set; }
     
         public virtual ClientSet ClientSet { get; set; }
         public virtual ProductSet ProductSet { get; set; }

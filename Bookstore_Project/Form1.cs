@@ -35,5 +35,12 @@ namespace Bookstore_Project
             formProduct.Show();
 
         }
+
+        private void buttonOpenProductTraking_Click(object sender, EventArgs e)
+        {
+            Form formProductTracing = new FormProductTraking();
+            formProductTracing.Show();
+                 
+        }
     }
 }

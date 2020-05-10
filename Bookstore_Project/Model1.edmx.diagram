@@ -4,14 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="b5fc2aeb9aa64c2d8be2a5fb8c638c61" Name="Diagram1">
-        <EntityTypeShape EntityType="MyProgectModel.ClientSet" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="MyProgectModel.ProductSet" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="MyProgectModel.ProductTraking" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="MyProgectModel.WorkerSet" Width="1.5" PointX="0.75" PointY="9.625" IsExpanded="true" />
-        <AssociationConnector Association="MyProgectModel.FK_ProductTraking_ClientSet" ManuallyRouted="false" />
-        <AssociationConnector Association="MyProgectModel.FK_ProductTraking_ProductSet" ManuallyRouted="false" />
-        <AssociationConnector Association="MyProgectModel.FK_ProductTraking_WorkerSet" ManuallyRouted="false" />
+      <Diagram DiagramId="0ac28ec7fe854a54855a5ece74734438" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.ClientSet" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ProductSet" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ProductTraking" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.WorkerSet" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_ProductTraking_ClientSet" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ProductTraking_ProductSet" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ProductTraking_WorkerSet" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

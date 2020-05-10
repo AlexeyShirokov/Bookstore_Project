@@ -21,14 +21,12 @@ namespace Bookstore_Project
         }
     
         public int Id { get; set; }
-        public string Books { get; set; }
-        public string TadleGames { get; set; }
-        public string OfficeSupplies { get; set; }
         public string Author { get; set; }
         public string Name { get; set; }
         public string GameName { get; set; }
         public string NameOfficeSupply { get; set; }
         public Nullable<int> Type { get; set; }
+        public Nullable<int> Prise { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ProductTraking> ProductTraking { get; set; }

@@ -13,10 +13,10 @@ namespace Bookstore_Project
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class MyProgectEntities3 : DbContext
+    public partial class My_ProgectEntities1 : DbContext
     {
-        public MyProgectEntities3()
-            : base("name=MyProgectEntities3")
+        public My_ProgectEntities1()
+            : base("name=My_ProgectEntities1")
         {
         }
     

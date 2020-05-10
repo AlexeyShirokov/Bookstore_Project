@@ -8,7 +8,7 @@ namespace Bookstore_Project
 {
     static class Program
     {
-        public static MyProgectEntities3 mpgc = new MyProgectEntities3();
+        public static My_ProgectEntities1 mpgc = new My_ProgectEntities1();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>

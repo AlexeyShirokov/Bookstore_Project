@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Хранилище MyProgectModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="Хранилище Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="ClientSet">
           <Key>
             <PropertyRef Name="Id" />
@@ -21,14 +21,12 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Books" Type="nvarchar(max)" />
-          <Property Name="TadleGames" Type="nvarchar(max)" />
-          <Property Name="OfficeSupplies" Type="nvarchar(max)" />
-          <Property Name="Author" Type="nvarchar" MaxLength="50" />
-          <Property Name="Name" Type="nvarchar" MaxLength="50" />
-          <Property Name="GameName" Type="nvarchar" MaxLength="50" />
-          <Property Name="NameOfficeSupply" Type="nvarchar" MaxLength="50" />
+          <Property Name="Author" Type="nvarchar(max)" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="GameName" Type="nvarchar(max)" />
+          <Property Name="NameOfficeSupply" Type="nvarchar(max)" />
           <Property Name="Type" Type="int" />
+          <Property Name="Prise" Type="int" />
         </EntityType>
         <EntityType Name="ProductTraking">
           <Key>
@@ -38,7 +36,6 @@
           <Property Name="IdClient" Type="int" />
           <Property Name="IdWorker" Type="int" />
           <Property Name="IdProduct" Type="int" />
-          <Property Name="Prise" Type="int" />
         </EntityType>
         <EntityType Name="WorkerSet">
           <Key>
@@ -87,7 +84,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="Хранилище MyProgectModelContainer">
+        <EntityContainer Name="Хранилище ModelContainer">
           <EntitySet Name="ClientSet" EntityType="Self.ClientSet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ProductSet" EntityType="Self.ProductSet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ProductTraking" EntityType="Self.ProductTraking" Schema="dbo" store:Type="Tables" />
@@ -109,7 +106,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="MyProgectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="ClientSet">
           <Key>
             <PropertyRef Name="Id" />
@@ -127,14 +124,12 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Books" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="TadleGames" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="OfficeSupplies" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Author" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="GameName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="NameOfficeSupply" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Author" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="GameName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NameOfficeSupply" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Type" Type="Int32" />
+          <Property Name="Prise" Type="Int32" />
           <NavigationProperty Name="ProductTraking" Relationship="Self.FK_ProductTraking_ProductSet" FromRole="ProductSet" ToRole="ProductTraking" />
         </EntityType>
         <EntityType Name="ProductTraking">
@@ -145,7 +140,6 @@
           <Property Name="IdClient" Type="Int32" />
           <Property Name="IdWorker" Type="Int32" />
           <Property Name="IdProduct" Type="Int32" />
-          <Property Name="Prise" Type="Int32" />
           <NavigationProperty Name="ClientSet" Relationship="Self.FK_ProductTraking_ClientSet" FromRole="ProductTraking" ToRole="ClientSet" />
           <NavigationProperty Name="ProductSet" Relationship="Self.FK_ProductTraking_ProductSet" FromRole="ProductTraking" ToRole="ProductSet" />
           <NavigationProperty Name="WorkerSet" Relationship="Self.FK_ProductTraking_WorkerSet" FromRole="ProductTraking" ToRole="WorkerSet" />
@@ -198,7 +192,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="MyProgectEntities3" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="My_ProgectEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ClientSet" EntityType="Self.ClientSet" />
           <EntitySet Name="ProductSet" EntityType="Self.ProductSet" />
           <EntitySet Name="ProductTraking" EntityType="Self.ProductTraking" />
@@ -221,9 +215,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище MyProgectModelContainer" CdmEntityContainer="MyProgectEntities3">
+        <EntityContainerMapping StorageEntityContainer="Хранилище ModelContainer" CdmEntityContainer="My_ProgectEntities1">
           <EntitySetMapping Name="ClientSet">
-            <EntityTypeMapping TypeName="MyProgectModel.ClientSet">
+            <EntityTypeMapping TypeName="Model.ClientSet">
               <MappingFragment StoreEntitySet="ClientSet">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="FirstName" ColumnName="FirstName" />
@@ -235,33 +229,30 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProductSet">
-            <EntityTypeMapping TypeName="MyProgectModel.ProductSet">
+            <EntityTypeMapping TypeName="Model.ProductSet">
               <MappingFragment StoreEntitySet="ProductSet">
                 <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Books" ColumnName="Books" />
-                <ScalarProperty Name="TadleGames" ColumnName="TadleGames" />
-                <ScalarProperty Name="OfficeSupplies" ColumnName="OfficeSupplies" />
                 <ScalarProperty Name="Author" ColumnName="Author" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="GameName" ColumnName="GameName" />
                 <ScalarProperty Name="NameOfficeSupply" ColumnName="NameOfficeSupply" />
                 <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Prise" ColumnName="Prise" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProductTraking">
-            <EntityTypeMapping TypeName="MyProgectModel.ProductTraking">
+            <EntityTypeMapping TypeName="Model.ProductTraking">
               <MappingFragment StoreEntitySet="ProductTraking">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="IdClient" ColumnName="IdClient" />
                 <ScalarProperty Name="IdWorker" ColumnName="IdWorker" />
                 <ScalarProperty Name="IdProduct" ColumnName="IdProduct" />
-                <ScalarProperty Name="Prise" ColumnName="Prise" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="WorkerSet">
-            <EntityTypeMapping TypeName="MyProgectModel.WorkerSet">
+            <EntityTypeMapping TypeName="Model.WorkerSet">
               <MappingFragment StoreEntitySet="WorkerSet">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="FirstName" ColumnName="FirstName" />

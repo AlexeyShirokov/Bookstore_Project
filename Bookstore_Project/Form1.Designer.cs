@@ -76,6 +76,7 @@
             this.buttonOpenProductTraking.TabIndex = 3;
             this.buttonOpenProductTraking.Text = "Покупка";
             this.buttonOpenProductTraking.UseVisualStyleBackColor = true;
+            this.buttonOpenProductTraking.Click += new System.EventHandler(this.buttonOpenProductTraking_Click);
             // 
             // Menu
             // 

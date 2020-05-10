@@ -48,6 +48,11 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonDel = new System.Windows.Forms.Button();
+            this.labelPrise = new System.Windows.Forms.Label();
+            this.textBoxPrise = new System.Windows.Forms.TextBox();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // comboBoxType
@@ -66,14 +71,15 @@
             // listViewOfficeSupplies
             // 
             this.listViewOfficeSupplies.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader4});
+            this.columnHeader4,
+            this.columnHeader7});
             this.listViewOfficeSupplies.FullRowSelect = true;
             this.listViewOfficeSupplies.GridLines = true;
             this.listViewOfficeSupplies.HideSelection = false;
-            this.listViewOfficeSupplies.Location = new System.Drawing.Point(854, 12);
+            this.listViewOfficeSupplies.Location = new System.Drawing.Point(324, 9);
             this.listViewOfficeSupplies.MultiSelect = false;
             this.listViewOfficeSupplies.Name = "listViewOfficeSupplies";
-            this.listViewOfficeSupplies.Size = new System.Drawing.Size(299, 304);
+            this.listViewOfficeSupplies.Size = new System.Drawing.Size(543, 330);
             this.listViewOfficeSupplies.TabIndex = 1;
             this.listViewOfficeSupplies.UseCompatibleStateImageBehavior = false;
             this.listViewOfficeSupplies.View = System.Windows.Forms.View.Details;
@@ -82,20 +88,21 @@
             // columnHeader4
             // 
             this.columnHeader4.Text = "Наименование товара ";
-            this.columnHeader4.Width = 366;
+            this.columnHeader4.Width = 200;
             // 
             // listViewBooks
             // 
             this.listViewBooks.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
-            this.columnHeader2});
+            this.columnHeader2,
+            this.columnHeader5});
             this.listViewBooks.FullRowSelect = true;
             this.listViewBooks.GridLines = true;
             this.listViewBooks.HideSelection = false;
-            this.listViewBooks.Location = new System.Drawing.Point(201, 9);
+            this.listViewBooks.Location = new System.Drawing.Point(324, 9);
             this.listViewBooks.MultiSelect = false;
             this.listViewBooks.Name = "listViewBooks";
-            this.listViewBooks.Size = new System.Drawing.Size(631, 178);
+            this.listViewBooks.Size = new System.Drawing.Size(543, 330);
             this.listViewBooks.TabIndex = 2;
             this.listViewBooks.UseCompatibleStateImageBehavior = false;
             this.listViewBooks.View = System.Windows.Forms.View.Details;
@@ -115,15 +122,16 @@
             // listViewTableGames
             // 
             this.listViewTableGames.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader3});
+            this.columnHeader3,
+            this.columnHeader6});
             this.listViewTableGames.FullRowSelect = true;
             this.listViewTableGames.GridLines = true;
             this.listViewTableGames.HideSelection = false;
-            this.listViewTableGames.Location = new System.Drawing.Point(201, 193);
+            this.listViewTableGames.Location = new System.Drawing.Point(324, 9);
             this.listViewTableGames.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
             this.listViewTableGames.MultiSelect = false;
             this.listViewTableGames.Name = "listViewTableGames";
-            this.listViewTableGames.Size = new System.Drawing.Size(631, 123);
+            this.listViewTableGames.Size = new System.Drawing.Size(543, 330);
             this.listViewTableGames.TabIndex = 3;
             this.listViewTableGames.UseCompatibleStateImageBehavior = false;
             this.listViewTableGames.View = System.Windows.Forms.View.Details;
@@ -132,7 +140,7 @@
             // columnHeader3
             // 
             this.columnHeader3.Text = "Название игры";
-            this.columnHeader3.Width = 364;
+            this.columnHeader3.Width = 367;
             // 
             // textBoxNameOfficeSupply
             // 
@@ -209,7 +217,7 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(42, 345);
+            this.buttonAdd.Location = new System.Drawing.Point(499, 346);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(92, 37);
             this.buttonAdd.TabIndex = 13;
@@ -219,7 +227,7 @@
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(140, 345);
+            this.buttonEdit.Location = new System.Drawing.Point(597, 346);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(92, 37);
             this.buttonEdit.TabIndex = 14;
@@ -229,7 +237,7 @@
             // 
             // buttonDel
             // 
-            this.buttonDel.Location = new System.Drawing.Point(238, 345);
+            this.buttonDel.Location = new System.Drawing.Point(695, 346);
             this.buttonDel.Name = "buttonDel";
             this.buttonDel.Size = new System.Drawing.Size(92, 37);
             this.buttonDel.TabIndex = 15;
@@ -237,11 +245,41 @@
             this.buttonDel.UseVisualStyleBackColor = true;
             this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
+            // labelPrise
+            // 
+            this.labelPrise.AutoSize = true;
+            this.labelPrise.Location = new System.Drawing.Point(22, 303);
+            this.labelPrise.Name = "labelPrise";
+            this.labelPrise.Size = new System.Drawing.Size(33, 13);
+            this.labelPrise.TabIndex = 16;
+            this.labelPrise.Text = "Цена";
+            // 
+            // textBoxPrise
+            // 
+            this.textBoxPrise.Location = new System.Drawing.Point(12, 319);
+            this.textBoxPrise.Name = "textBoxPrise";
+            this.textBoxPrise.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPrise.TabIndex = 17;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Цена";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Цена";
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Цена";
+            // 
             // FormProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1208, 395);
+            this.ClientSize = new System.Drawing.Size(877, 395);
+            this.Controls.Add(this.textBoxPrise);
+            this.Controls.Add(this.labelPrise);
             this.Controls.Add(this.buttonDel);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonAdd);
@@ -287,5 +325,10 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonEdit;
         private System.Windows.Forms.Button buttonDel;
+        private System.Windows.Forms.Label labelPrise;
+        private System.Windows.Forms.TextBox textBoxPrise;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
     }
 }
