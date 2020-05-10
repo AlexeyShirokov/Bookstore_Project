@@ -10,11 +10,30 @@ using System.Windows.Forms;
 
 namespace Bookstore_Project
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
+        }
+
+        private void buttonOpenClients_Click(object sender, EventArgs e)
+        {
+            Form formClient = new FormClient();
+            formClient.Show();
+        }
+
+        private void buttonOpenWorker_Click(object sender, EventArgs e)
+        {
+            Form formWorker = new FormWorker();
+            formWorker.Show();
+        }
+
+        private void buttonOpenProduct_Click(object sender, EventArgs e)
+        {
+            Form formProduct = new FormProduct();
+            formProduct.Show();
+
         }
     }
 }

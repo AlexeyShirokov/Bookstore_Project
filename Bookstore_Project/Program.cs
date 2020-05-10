@@ -8,6 +8,7 @@ namespace Bookstore_Project
 {
     static class Program
     {
+        public static MyProgectEntities3 mpgc = new MyProgectEntities3();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,7 +17,7 @@ namespace Bookstore_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Menu());
         }
     }
 }
