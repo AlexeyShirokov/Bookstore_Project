@@ -15,6 +15,8 @@ namespace Bookstore_Project
         public Menu()
         {
             InitializeComponent();
+            if (FormAutorization.users.type == "agent") buttonOpenWorker.Enabled = false;
+            labelHello.Text = "Приветствую тебя, " + FormAutorization.users.login;
         }
 
         private void buttonOpenClients_Click(object sender, EventArgs e)
@@ -41,6 +43,11 @@ namespace Bookstore_Project
             Form formProductTracing = new FormProductTraking();
             formProductTracing.Show();
                  
+        }
+
+        private void buttonCanel_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

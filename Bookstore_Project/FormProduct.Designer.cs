@@ -28,14 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProduct));
             this.comboBoxType = new System.Windows.Forms.ComboBox();
             this.listViewOfficeSupplies = new System.Windows.Forms.ListView();
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listViewBooks = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listViewTableGames = new System.Windows.Forms.ListView();
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.textBoxNameOfficeSupply = new System.Windows.Forms.TextBox();
             this.textBoxGameName = new System.Windows.Forms.TextBox();
             this.textBoxAuthor = new System.Windows.Forms.TextBox();
@@ -50,19 +54,19 @@
             this.buttonDel = new System.Windows.Forms.Button();
             this.labelPrise = new System.Windows.Forms.Label();
             this.textBoxPrise = new System.Windows.Forms.TextBox();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxType
             // 
+            this.comboBoxType.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.comboBoxType.FormattingEnabled = true;
             this.comboBoxType.Items.AddRange(new object[] {
             "Книги",
             "Настольные игры",
             "Канцтовары"});
-            this.comboBoxType.Location = new System.Drawing.Point(12, 57);
+            this.comboBoxType.Location = new System.Drawing.Point(22, 109);
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(121, 21);
             this.comboBoxType.TabIndex = 0;
@@ -76,7 +80,7 @@
             this.listViewOfficeSupplies.FullRowSelect = true;
             this.listViewOfficeSupplies.GridLines = true;
             this.listViewOfficeSupplies.HideSelection = false;
-            this.listViewOfficeSupplies.Location = new System.Drawing.Point(324, 9);
+            this.listViewOfficeSupplies.Location = new System.Drawing.Point(182, 62);
             this.listViewOfficeSupplies.MultiSelect = false;
             this.listViewOfficeSupplies.Name = "listViewOfficeSupplies";
             this.listViewOfficeSupplies.Size = new System.Drawing.Size(543, 330);
@@ -90,6 +94,10 @@
             this.columnHeader4.Text = "Наименование товара ";
             this.columnHeader4.Width = 200;
             // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Цена";
+            // 
             // listViewBooks
             // 
             this.listViewBooks.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -99,7 +107,7 @@
             this.listViewBooks.FullRowSelect = true;
             this.listViewBooks.GridLines = true;
             this.listViewBooks.HideSelection = false;
-            this.listViewBooks.Location = new System.Drawing.Point(324, 9);
+            this.listViewBooks.Location = new System.Drawing.Point(182, 62);
             this.listViewBooks.MultiSelect = false;
             this.listViewBooks.Name = "listViewBooks";
             this.listViewBooks.Size = new System.Drawing.Size(543, 330);
@@ -119,6 +127,10 @@
             this.columnHeader2.Text = "Название ";
             this.columnHeader2.Width = 181;
             // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Цена";
+            // 
             // listViewTableGames
             // 
             this.listViewTableGames.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -127,7 +139,7 @@
             this.listViewTableGames.FullRowSelect = true;
             this.listViewTableGames.GridLines = true;
             this.listViewTableGames.HideSelection = false;
-            this.listViewTableGames.Location = new System.Drawing.Point(324, 9);
+            this.listViewTableGames.Location = new System.Drawing.Point(182, 61);
             this.listViewTableGames.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
             this.listViewTableGames.MultiSelect = false;
             this.listViewTableGames.Name = "listViewTableGames";
@@ -140,40 +152,50 @@
             // columnHeader3
             // 
             this.columnHeader3.Text = "Название игры";
-            this.columnHeader3.Width = 367;
+            this.columnHeader3.Width = 260;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Цена";
+            this.columnHeader6.Width = 280;
             // 
             // textBoxNameOfficeSupply
             // 
-            this.textBoxNameOfficeSupply.Location = new System.Drawing.Point(12, 167);
+            this.textBoxNameOfficeSupply.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxNameOfficeSupply.Location = new System.Drawing.Point(22, 213);
             this.textBoxNameOfficeSupply.Name = "textBoxNameOfficeSupply";
             this.textBoxNameOfficeSupply.Size = new System.Drawing.Size(100, 20);
             this.textBoxNameOfficeSupply.TabIndex = 4;
             // 
             // textBoxGameName
             // 
-            this.textBoxGameName.Location = new System.Drawing.Point(12, 117);
+            this.textBoxGameName.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxGameName.Location = new System.Drawing.Point(22, 163);
             this.textBoxGameName.Name = "textBoxGameName";
             this.textBoxGameName.Size = new System.Drawing.Size(100, 20);
             this.textBoxGameName.TabIndex = 5;
             // 
             // textBoxAuthor
             // 
-            this.textBoxAuthor.Location = new System.Drawing.Point(12, 223);
+            this.textBoxAuthor.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxAuthor.Location = new System.Drawing.Point(23, 258);
             this.textBoxAuthor.Name = "textBoxAuthor";
             this.textBoxAuthor.Size = new System.Drawing.Size(100, 20);
             this.textBoxAuthor.TabIndex = 6;
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(12, 273);
+            this.textBoxName.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxName.Location = new System.Drawing.Point(23, 308);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(81, 20);
+            this.textBoxName.Size = new System.Drawing.Size(99, 20);
             this.textBoxName.TabIndex = 7;
             // 
             // labelType
             // 
             this.labelType.AutoSize = true;
-            this.labelType.Location = new System.Drawing.Point(12, 41);
+            this.labelType.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelType.Location = new System.Drawing.Point(19, 93);
             this.labelType.Name = "labelType";
             this.labelType.Size = new System.Drawing.Size(67, 13);
             this.labelType.TabIndex = 8;
@@ -182,7 +204,8 @@
             // labelAuthor
             // 
             this.labelAuthor.AutoSize = true;
-            this.labelAuthor.Location = new System.Drawing.Point(12, 207);
+            this.labelAuthor.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelAuthor.Location = new System.Drawing.Point(20, 242);
             this.labelAuthor.Name = "labelAuthor";
             this.labelAuthor.Size = new System.Drawing.Size(37, 13);
             this.labelAuthor.TabIndex = 9;
@@ -191,7 +214,8 @@
             // labelGameName
             // 
             this.labelGameName.AutoSize = true;
-            this.labelGameName.Location = new System.Drawing.Point(9, 98);
+            this.labelGameName.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelGameName.Location = new System.Drawing.Point(19, 144);
             this.labelGameName.Name = "labelGameName";
             this.labelGameName.Size = new System.Drawing.Size(85, 13);
             this.labelGameName.TabIndex = 10;
@@ -200,7 +224,8 @@
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(9, 257);
+            this.labelName.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelName.Location = new System.Drawing.Point(20, 292);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(60, 13);
             this.labelName.TabIndex = 11;
@@ -209,7 +234,8 @@
             // labelNameOfficeSupply
             // 
             this.labelNameOfficeSupply.AutoSize = true;
-            this.labelNameOfficeSupply.Location = new System.Drawing.Point(9, 148);
+            this.labelNameOfficeSupply.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelNameOfficeSupply.Location = new System.Drawing.Point(19, 194);
             this.labelNameOfficeSupply.Name = "labelNameOfficeSupply";
             this.labelNameOfficeSupply.Size = new System.Drawing.Size(148, 13);
             this.labelNameOfficeSupply.TabIndex = 12;
@@ -217,38 +243,48 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(499, 346);
+            this.buttonAdd.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonAdd.Location = new System.Drawing.Point(454, 398);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(92, 37);
+            this.buttonAdd.Size = new System.Drawing.Size(75, 38);
             this.buttonAdd.TabIndex = 13;
             this.buttonAdd.Text = "Создать";
-            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(597, 346);
+            this.buttonEdit.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonEdit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonEdit.Location = new System.Drawing.Point(552, 398);
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(92, 37);
+            this.buttonEdit.Size = new System.Drawing.Size(75, 38);
             this.buttonEdit.TabIndex = 14;
             this.buttonEdit.Text = "Изменить";
-            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.UseVisualStyleBackColor = false;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonDel
             // 
-            this.buttonDel.Location = new System.Drawing.Point(695, 346);
+            this.buttonDel.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.buttonDel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonDel.Location = new System.Drawing.Point(650, 398);
             this.buttonDel.Name = "buttonDel";
-            this.buttonDel.Size = new System.Drawing.Size(92, 37);
+            this.buttonDel.Size = new System.Drawing.Size(75, 38);
             this.buttonDel.TabIndex = 15;
             this.buttonDel.Text = "Удалить";
-            this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.UseVisualStyleBackColor = false;
             this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // labelPrise
             // 
             this.labelPrise.AutoSize = true;
-            this.labelPrise.Location = new System.Drawing.Point(22, 303);
+            this.labelPrise.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelPrise.Location = new System.Drawing.Point(23, 338);
             this.labelPrise.Name = "labelPrise";
             this.labelPrise.Size = new System.Drawing.Size(33, 13);
             this.labelPrise.TabIndex = 16;
@@ -256,28 +292,29 @@
             // 
             // textBoxPrise
             // 
-            this.textBoxPrise.Location = new System.Drawing.Point(12, 319);
+            this.textBoxPrise.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxPrise.Location = new System.Drawing.Point(23, 354);
             this.textBoxPrise.Name = "textBoxPrise";
-            this.textBoxPrise.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPrise.Size = new System.Drawing.Size(99, 20);
             this.textBoxPrise.TabIndex = 17;
             // 
-            // columnHeader5
+            // pictureBox1
             // 
-            this.columnHeader5.Text = "Цена";
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Цена";
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Цена";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(138, 68);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
             // 
             // FormProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(877, 395);
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClientSize = new System.Drawing.Size(741, 449);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBoxPrise);
             this.Controls.Add(this.labelPrise);
             this.Controls.Add(this.buttonDel);
@@ -297,7 +334,9 @@
             this.Controls.Add(this.listViewOfficeSupplies);
             this.Controls.Add(this.comboBoxType);
             this.Name = "FormProduct";
-            this.Text = "FormProduct";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Товары";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,5 +369,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

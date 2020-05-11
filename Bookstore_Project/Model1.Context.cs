@@ -13,10 +13,10 @@ namespace Bookstore_Project
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class My_ProgectEntities1 : DbContext
+    public partial class My_ProgectEntities4 : DbContext
     {
-        public My_ProgectEntities1()
-            : base("name=My_ProgectEntities1")
+        public My_ProgectEntities4()
+            : base("name=My_ProgectEntities4")
         {
         }
     
@@ -28,6 +28,7 @@ namespace Bookstore_Project
         public virtual DbSet<ClientSet> ClientSet { get; set; }
         public virtual DbSet<ProductSet> ProductSet { get; set; }
         public virtual DbSet<ProductTraking> ProductTraking { get; set; }
+        public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<WorkerSet> WorkerSet { get; set; }
     }
 }
