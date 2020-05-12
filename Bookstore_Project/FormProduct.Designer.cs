@@ -61,6 +61,7 @@
             // comboBoxType
             // 
             this.comboBoxType.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.comboBoxType.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBoxType.FormattingEnabled = true;
             this.comboBoxType.Items.AddRange(new object[] {
             "Книги",
@@ -68,7 +69,7 @@
             "Канцтовары"});
             this.comboBoxType.Location = new System.Drawing.Point(22, 109);
             this.comboBoxType.Name = "comboBoxType";
-            this.comboBoxType.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxType.Size = new System.Drawing.Size(121, 23);
             this.comboBoxType.TabIndex = 0;
             this.comboBoxType.SelectedIndexChanged += new System.EventHandler(this.comboBoxType_SelectedIndexChanged);
             // 
@@ -80,10 +81,10 @@
             this.listViewOfficeSupplies.FullRowSelect = true;
             this.listViewOfficeSupplies.GridLines = true;
             this.listViewOfficeSupplies.HideSelection = false;
-            this.listViewOfficeSupplies.Location = new System.Drawing.Point(182, 62);
+            this.listViewOfficeSupplies.Location = new System.Drawing.Point(194, 65);
             this.listViewOfficeSupplies.MultiSelect = false;
             this.listViewOfficeSupplies.Name = "listViewOfficeSupplies";
-            this.listViewOfficeSupplies.Size = new System.Drawing.Size(543, 330);
+            this.listViewOfficeSupplies.Size = new System.Drawing.Size(543, 312);
             this.listViewOfficeSupplies.TabIndex = 1;
             this.listViewOfficeSupplies.UseCompatibleStateImageBehavior = false;
             this.listViewOfficeSupplies.View = System.Windows.Forms.View.Details;
@@ -107,10 +108,10 @@
             this.listViewBooks.FullRowSelect = true;
             this.listViewBooks.GridLines = true;
             this.listViewBooks.HideSelection = false;
-            this.listViewBooks.Location = new System.Drawing.Point(182, 62);
+            this.listViewBooks.Location = new System.Drawing.Point(194, 65);
             this.listViewBooks.MultiSelect = false;
             this.listViewBooks.Name = "listViewBooks";
-            this.listViewBooks.Size = new System.Drawing.Size(543, 330);
+            this.listViewBooks.Size = new System.Drawing.Size(543, 312);
             this.listViewBooks.TabIndex = 2;
             this.listViewBooks.UseCompatibleStateImageBehavior = false;
             this.listViewBooks.View = System.Windows.Forms.View.Details;
@@ -139,11 +140,11 @@
             this.listViewTableGames.FullRowSelect = true;
             this.listViewTableGames.GridLines = true;
             this.listViewTableGames.HideSelection = false;
-            this.listViewTableGames.Location = new System.Drawing.Point(182, 61);
+            this.listViewTableGames.Location = new System.Drawing.Point(194, 64);
             this.listViewTableGames.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
             this.listViewTableGames.MultiSelect = false;
             this.listViewTableGames.Name = "listViewTableGames";
-            this.listViewTableGames.Size = new System.Drawing.Size(543, 330);
+            this.listViewTableGames.Size = new System.Drawing.Size(543, 313);
             this.listViewTableGames.TabIndex = 3;
             this.listViewTableGames.UseCompatibleStateImageBehavior = false;
             this.listViewTableGames.View = System.Windows.Forms.View.Details;
@@ -162,42 +163,47 @@
             // textBoxNameOfficeSupply
             // 
             this.textBoxNameOfficeSupply.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxNameOfficeSupply.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxNameOfficeSupply.Location = new System.Drawing.Point(22, 213);
             this.textBoxNameOfficeSupply.Name = "textBoxNameOfficeSupply";
-            this.textBoxNameOfficeSupply.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNameOfficeSupply.Size = new System.Drawing.Size(100, 23);
             this.textBoxNameOfficeSupply.TabIndex = 4;
             // 
             // textBoxGameName
             // 
             this.textBoxGameName.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxGameName.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxGameName.Location = new System.Drawing.Point(22, 163);
             this.textBoxGameName.Name = "textBoxGameName";
-            this.textBoxGameName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxGameName.Size = new System.Drawing.Size(100, 23);
             this.textBoxGameName.TabIndex = 5;
             // 
             // textBoxAuthor
             // 
             this.textBoxAuthor.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxAuthor.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxAuthor.Location = new System.Drawing.Point(23, 258);
             this.textBoxAuthor.Name = "textBoxAuthor";
-            this.textBoxAuthor.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAuthor.Size = new System.Drawing.Size(100, 23);
             this.textBoxAuthor.TabIndex = 6;
             // 
             // textBoxName
             // 
             this.textBoxName.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxName.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxName.Location = new System.Drawing.Point(23, 308);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(99, 20);
+            this.textBoxName.Size = new System.Drawing.Size(99, 23);
             this.textBoxName.TabIndex = 7;
             // 
             // labelType
             // 
             this.labelType.AutoSize = true;
             this.labelType.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelType.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelType.Location = new System.Drawing.Point(19, 93);
             this.labelType.Name = "labelType";
-            this.labelType.Size = new System.Drawing.Size(67, 13);
+            this.labelType.Size = new System.Drawing.Size(75, 15);
             this.labelType.TabIndex = 8;
             this.labelType.Text = "Тип товара ";
             // 
@@ -205,9 +211,10 @@
             // 
             this.labelAuthor.AutoSize = true;
             this.labelAuthor.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelAuthor.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelAuthor.Location = new System.Drawing.Point(20, 242);
             this.labelAuthor.Name = "labelAuthor";
-            this.labelAuthor.Size = new System.Drawing.Size(37, 13);
+            this.labelAuthor.Size = new System.Drawing.Size(42, 15);
             this.labelAuthor.TabIndex = 9;
             this.labelAuthor.Text = "Автор";
             // 
@@ -215,9 +222,10 @@
             // 
             this.labelGameName.AutoSize = true;
             this.labelGameName.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelGameName.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelGameName.Location = new System.Drawing.Point(19, 144);
             this.labelGameName.Name = "labelGameName";
-            this.labelGameName.Size = new System.Drawing.Size(85, 13);
+            this.labelGameName.Size = new System.Drawing.Size(97, 15);
             this.labelGameName.TabIndex = 10;
             this.labelGameName.Text = "Название игры";
             // 
@@ -225,9 +233,10 @@
             // 
             this.labelName.AutoSize = true;
             this.labelName.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelName.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelName.Location = new System.Drawing.Point(20, 292);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(60, 13);
+            this.labelName.Size = new System.Drawing.Size(68, 15);
             this.labelName.TabIndex = 11;
             this.labelName.Text = "Название ";
             // 
@@ -235,9 +244,10 @@
             // 
             this.labelNameOfficeSupply.AutoSize = true;
             this.labelNameOfficeSupply.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelNameOfficeSupply.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelNameOfficeSupply.Location = new System.Drawing.Point(19, 194);
             this.labelNameOfficeSupply.Name = "labelNameOfficeSupply";
-            this.labelNameOfficeSupply.Size = new System.Drawing.Size(148, 13);
+            this.labelNameOfficeSupply.Size = new System.Drawing.Size(171, 15);
             this.labelNameOfficeSupply.TabIndex = 12;
             this.labelNameOfficeSupply.Text = "Наименование канцтовара ";
             // 
@@ -245,8 +255,9 @@
             // 
             this.buttonAdd.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAdd.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonAdd.Location = new System.Drawing.Point(454, 398);
+            this.buttonAdd.Location = new System.Drawing.Point(462, 383);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(75, 38);
             this.buttonAdd.TabIndex = 13;
@@ -258,8 +269,9 @@
             // 
             this.buttonEdit.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonEdit.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonEdit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonEdit.Location = new System.Drawing.Point(552, 398);
+            this.buttonEdit.Location = new System.Drawing.Point(560, 383);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(75, 38);
             this.buttonEdit.TabIndex = 14;
@@ -271,8 +283,9 @@
             // 
             this.buttonDel.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.buttonDel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDel.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonDel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonDel.Location = new System.Drawing.Point(650, 398);
+            this.buttonDel.Location = new System.Drawing.Point(658, 383);
             this.buttonDel.Name = "buttonDel";
             this.buttonDel.Size = new System.Drawing.Size(75, 38);
             this.buttonDel.TabIndex = 15;
@@ -284,18 +297,20 @@
             // 
             this.labelPrise.AutoSize = true;
             this.labelPrise.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelPrise.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelPrise.Location = new System.Drawing.Point(23, 338);
             this.labelPrise.Name = "labelPrise";
-            this.labelPrise.Size = new System.Drawing.Size(33, 13);
+            this.labelPrise.Size = new System.Drawing.Size(37, 15);
             this.labelPrise.TabIndex = 16;
             this.labelPrise.Text = "Цена";
             // 
             // textBoxPrise
             // 
             this.textBoxPrise.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxPrise.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxPrise.Location = new System.Drawing.Point(23, 354);
             this.textBoxPrise.Name = "textBoxPrise";
-            this.textBoxPrise.Size = new System.Drawing.Size(99, 20);
+            this.textBoxPrise.Size = new System.Drawing.Size(99, 23);
             this.textBoxPrise.TabIndex = 17;
             // 
             // pictureBox1
@@ -313,7 +328,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(741, 449);
+            this.ClientSize = new System.Drawing.Size(751, 435);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBoxPrise);
             this.Controls.Add(this.labelPrise);

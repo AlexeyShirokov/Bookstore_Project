@@ -125,7 +125,7 @@
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.labelHead);
             this.Name = "FormAutorization";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Авторизация";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -233,7 +233,7 @@
             this.Controls.Add(this.comboBoxWorker);
             this.Controls.Add(this.comboBoxClient);
             this.Name = "FormProductTraking";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Учет проданного товара";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
